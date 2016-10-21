@@ -133,6 +133,9 @@ public class LayoutFaceService extends CanvasWatchFaceService
             myLayout = inflater.inflate(R.layout.watchface, null);
             Display display = ((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 
+            // Code snipit from the email
+            display.getSize(displaySize);
+
             specW = View.MeasureSpec.makeMeasureSpec(displaySize.x, View.MeasureSpec.EXACTLY);
             specH = View.MeasureSpec.makeMeasureSpec(displaySize.y, View.MeasureSpec.EXACTLY);
 
